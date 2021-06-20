@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.bridgelabz.InvoiceGeneratorTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-06-18T10:19:42" hostname="LAPTOP-DILI6N8Q" time="0.029">
+<testsuite name="com.bridgelabz.InvoiceGeneratorTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-06-20T11:23:09" hostname="LAPTOP-DILI6N8Q" time="0.022">
   <properties/>
-  <testcase name="givenDistanceTime_ReturnTotalFare()" classname="com.bridgelabz.InvoiceGeneratorTest" time="0.029"/>
+  <testcase name="givenDistanceTimeForRides_ReturnInvoiceSummary()" classname="com.bridgelabz.InvoiceGeneratorTest" time="0.022"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
