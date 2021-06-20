@@ -26,8 +26,9 @@ public class InvoiceGeneratorTest {
         ArrayList<Ride> rides = new ArrayList<>(Arrays.asList(new Ride(12, 10)
                 , new Ride(6, 12), new Ride(24, 12)));
         InvoiceGenerator invoiceGenerator = new InvoiceGenerator();
-        double totalFare = invoiceGenerator.getTotalFare(rides);
-        Assert.assertEquals(454, totalFare, 0);
+        InvoiceSummary invoiceSummary = invoiceGenerator.getTotalFare(rides);
+        InvoiceSummary invoiceSummaryExpected = new InvoiceSummary(3,454,151.33333333333334);
+        Assert.assertEquals(invoiceSummaryExpected, invoiceSummary);
     }
 
 }

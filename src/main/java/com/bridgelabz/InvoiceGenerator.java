@@ -9,6 +9,8 @@ public class InvoiceGenerator {
     private double distance;
     private double time;
     private double totalFare;
+    private double averageFare;
+
 
     public InvoiceGenerator(double distance, double time) {
         this.distance = distance;
@@ -24,13 +26,14 @@ public class InvoiceGenerator {
         return (totalFare > MINIMUM_COST) ? totalFare : MINIMUM_COST;
     }
 
-    public double getTotalFare(ArrayList<Ride> rides) {
+    public InvoiceSummary getTotalFare(ArrayList<Ride> rides) {
         for (Ride ride :
                 rides) {
             this.distance = ride.distance;
             this.time = ride.time;
             this.totalFare += getTotalFare();
         }
-        return totalFare;
+        this.averageFare = this.totalFare / rides.size();
+        return new InvoiceSummary(rides.size(), this.totalFare, this.averageFare);
     }
 }
