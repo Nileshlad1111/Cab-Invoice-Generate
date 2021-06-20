@@ -2,5 +2,10 @@ com/bridgelabz/Ride.java
  com.bridgelabz.Ride
 com/bridgelabz/InvoiceSummary.java
  com.bridgelabz.InvoiceSummary
+com/bridgelabz/RideRepositoryException.java
+ com.bridgelabz.RideRepositoryException
+ com.bridgelabz.RideRepositoryException$ExceptionType
+com/bridgelabz/RideRepository.java
+ com.bridgelabz.RideRepository
 com/bridgelabz/InvoiceGenerator.java
  com.bridgelabz.InvoiceGenerator
